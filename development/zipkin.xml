@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <TemplateURL>https://raw.githubusercontent.com/fabioyamate/docker-templates/master/development/zipkin.xml</TemplateURL>
+<Beta>False</Beta>
+<Category>Tracing</Category>
+<Date>2017-11-20</Date>
+  <Name>zipkin</Name>
+  <Support>https://github.com/openzipkin/docker-zipkin</Support>
+  <Overview>Zipkin is a distributed tracing system</Overview>
+  <Changes>Initial release</Changes>
+  <Description>
+    Zipkin is a distributed tracing system. It helps gather timing data needed to troubleshoot latency problems in microservice architectures. It manages both the collection and lookup of this data. Zipkin’s design is based on the Google Dapper paper.
+  </Description>
+  <Project>https://github.com/openzipkin/zipkin</Project>
+  <Registry>https://hub.docker.com/r/openzipkin/zipkin/</Registry>
+  <Repository>openzipkin/zipkin</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9411</HostPort>
+        <ContainerPort>9411</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Version></Version>
+  <WebUI>http://[IP]:[PORT:9411]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/fabioyamate/docker-templates/master/development/zipkin/zipkin-logo.jpg</Icon>
+  <ExtraParams></ExtraParams>
+  <BaseImage>openzipkin/jre-full:1.8.0_144</BaseImage>
+</Container>
