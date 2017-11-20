@@ -38,7 +38,7 @@
   </Networking>
   <Version></Version>
   <WebUI>http://[IP]:[PORT:9411]/</WebUI>
-  <Icon>https://raw.githubusercontent.com/fabioyamate/docker-templates/master/development/zipkin/zipkin-logo.jpg</Icon>
+  <Icon>https://raw.githubusercontent.com/fabioyamate/docker-templates/master/development/zipkin-logo.jpg</Icon>
   <ExtraParams></ExtraParams>
   <BaseImage>openzipkin/jre-full:1.8.0_144</BaseImage>
 </Container>
