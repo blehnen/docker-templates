@@ -39,7 +39,7 @@
     </Variable>
   </Environment>
   <Networking>
-    <Mode>bridge</Mode>
+    <Mode>host</Mode>
     <Publish>
       <Port>
         <HostPort>8080</HostPort>
@@ -86,7 +86,7 @@
     </Volume>
   </Data>
   <Version></Version>
-  <WebUI>http://[IP]:[PORT:8443]/</WebUI>
+  <WebUI>https://[IP]:[PORT:8443]/</WebUI>
   <Icon>https://raw.githubusercontent.com/fabioyamate/docker-templates/master/network/unifi-icon.png</Icon>
   <ExtraParams></ExtraParams>
   <BaseImage>jacobalberty/unifi:stable</BaseImage>
