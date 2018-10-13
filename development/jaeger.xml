@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <TemplateURL>https://raw.githubusercontent.com/fabioyamate/docker-templates/master/development/jaeger.xml</TemplateURL>
+<Beta>False</Beta>
+<Category>Tracing</Category>
+<Date>2018-10-12</Date>
+  <Name>jaeger</Name>
+  <Support>https://github.com/jaegertracing/jaeger</Support>
+  <Overview>Jaeger, inspired by Dapper and OpenZipkin, is a distributed tracing system released as open source by Uber Technologies.</Overview>
+  <Changes>Initial release</Changes>
+  <Description>
+    All-in-one is an executable designed for quick local testing, launches the Jaeger UI, collector, query, and agent, with an in memory storage component.
+  </Description>
+  <Project>https://github.com/jaegertracing/jaeger</Project>
+  <Registry>https://hub.docker.com/r/jaegertracing/all-in-one/</Registry>
+  <Repository>jaegertracing/all-in-one:1.7</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+    <Variable>
+      <Name>COLLECTOR_ZIPKIN_HTTP_PORT</Name>
+      <Value>9411</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5775</HostPort>
+        <ContainerPort>5775</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>6831</HostPort>
+        <ContainerPort>6831</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>6832</HostPort>
+        <ContainerPort>6832</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5778</HostPort>
+        <ContainerPort>5778</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>16686</HostPort>
+        <ContainerPort>16686</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>14268</HostPort>
+        <ContainerPort>14268</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>9411</HostPort>
+        <ContainerPort>9411</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Version></Version>
+  <WebUI>http://[IP]:[PORT:16686]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/fabioyamate/docker-templates/master/development/jaeger-icon.jpg</Icon>
+  <ExtraParams></ExtraParams>
+  <BaseImage>jaegertracing/all-in-one:1.7</BaseImage>
+</Container>
