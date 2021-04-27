@@ -44,4 +44,7 @@
     </Variable>
   </Environment>
   <Labels/>
+   <Config Name="5340" Target="80" Default="5340" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">5340</Config>
+   <Config Name="5341" Target="5341" Default="5341" Mode="tcp" Description="Container Port: 5341" Type="Port" Display="always" Required="true" Mask="false">5341</Config>
+   <Config Name="ACCEPT_EULA" Target="ACCEPT_EULA" Default="Y" Mode="" Description="EULA" Type="Variable" Display="always" Required="true" Mask="false">Y</Config>
 </Container>
