@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <TemplateURL>https://raw.githubusercontent.com/fabioyamate/docker-templates/master/development/jaeger.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/blehnen/docker-templates/edit/master/development/jaeger.xml</TemplateURL>
 <Beta>False</Beta>
 <Category>Tracing</Category>
-<Date>2018-10-12</Date>
+<Date>2021-04-26</Date>
   <Name>jaeger</Name>
   <Support>https://github.com/jaegertracing/jaeger</Support>
   <Overview>Jaeger, inspired by Dapper and OpenZipkin, is a distributed tracing system released as open source by Uber Technologies.</Overview>
@@ -13,7 +13,7 @@
   </Description>
   <Project>https://github.com/jaegertracing/jaeger</Project>
   <Registry>https://hub.docker.com/r/jaegertracing/all-in-one/</Registry>
-  <Repository>jaegertracing/all-in-one:1.7</Repository>
+  <Repository>jaegertracing/all-in-one:latest</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
