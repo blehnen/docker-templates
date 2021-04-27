@@ -12,7 +12,7 @@
   <Category>Logging: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:5340]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/blehnen/docker-templates/master/development/seq.xml</TemplateURL>
-  <Icon>https://github.com/blehnen/docker-templates/blob/master/development/seq-logo.png</Icon>
+  <Icon>https://raw.githubusercontent.com/blehnen/docker-templates/master/development/seq-logo.png</Icon>
   <Description>Application logging server</Description>
   <Networking>
     <Mode>bridge</Mode>
