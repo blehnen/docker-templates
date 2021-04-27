@@ -75,4 +75,12 @@
   <Icon>https://d36jcksde1wxzq.cloudfront.net/be7833db9bddb4494d2a7c3dd659199a.png</Icon>
   <ExtraParams></ExtraParams>
   <BaseImage>jaegertracing/all-in-one:latest</BaseImage>
+   <Config Name="5775" Target="5775" Default="5775" Mode="udp" Description="Container Port: 5775" Type="Port" Display="always" Required="true" Mask="false">5775</Config>
+   <Config Name="6831" Target="6831" Default="6831" Mode="udp" Description="Container Port: 6831" Type="Port" Display="always" Required="true" Mask="false">6831</Config>
+   <Config Name="6832" Target="6832" Default="6832" Mode="udp" Description="Container Port: 6832" Type="Port" Display="always" Required="true" Mask="false">6832</Config>
+   <Config Name="5778" Target="5778" Default="5778" Mode="tcp" Description="Container Port: 5778" Type="Port" Display="always" Required="true" Mask="false">5778</Config>
+   <Config Name="16686" Target="16686" Default="16686" Mode="tcp" Description="Container Port: 16686" Type="Port" Display="always" Required="true" Mask="false">16686</Config>
+   <Config Name="14268" Target="14268" Default="14268" Mode="tcp" Description="Container Port: 14268" Type="Port" Display="always" Required="true" Mask="false">14268</Config>
+   <Config Name="9411" Target="9411" Default="9411" Mode="tcp" Description="Container Port: 9411" Type="Port" Display="always" Required="true" Mask="false">9411</Config>
+  <Config Name="COLLECTOR_ZIPKIN_HTTP_PORT" Target="COLLECTOR_ZIPKIN_HTTP_PORT" Default="9411" Mode="" Description="Zipkin port" Type="Variable" Display="always" Required="true" Mask="false">9411</Config>
 </Container>
