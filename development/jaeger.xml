@@ -72,7 +72,7 @@
   </Networking>
   <Version></Version>
   <WebUI>http://[IP]:[PORT:16686]/</WebUI>
-  <Icon>https://raw.githubusercontent.com/fabioyamate/docker-templates/master/development/jaeger-icon.jpg</Icon>
+  <Icon>https://d36jcksde1wxzq.cloudfront.net/be7833db9bddb4494d2a7c3dd659199a.png</Icon>
   <ExtraParams></ExtraParams>
-  <BaseImage>jaegertracing/all-in-one:1.7</BaseImage>
+  <BaseImage>jaegertracing/all-in-one:latest</BaseImage>
 </Container>
