@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>redis</Name>
+  <Repository>redis:latest</Repository>
+  <Registry>https://hub.docker.com/_/redis/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/_/redis/</Support>
+  <Project>https://hub.docker.com/_/redis/</Project>
+  <Overview>Queue</Overview>
+  <Category>Queue: Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:15672]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/blehnen/docker-templates/master/development/redis.xml</TemplateURL>
+  <Icon>https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Redis_Logo.svg/200px-Redis_Logo.svg.png</Icon>
+  <Description>Qeueue</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>6379</HostPort>
+        <ContainerPort>6379</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+  </Data>
+  <Environment>
+	<Variable>
+      <Name>name</Name>
+      <Value>Redis</Value>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+   <Config Name="6379" Target="6379" Default="6379" Mode="tcp" Description="Container Port: 6379" Type="Port" Display="always" Required="true" Mask="false">6379</Config>
+   <Config Name="name" Target="name" Default="Redis" Mode="" Description="Name" Type="Variable" Display="always" Required="true" Mask="false">Redis</Config>
+</Container>
