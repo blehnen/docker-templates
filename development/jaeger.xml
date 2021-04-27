@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <TemplateURL>https://raw.githubusercontent.com/blehnen/docker-templates/edit/master/development/jaeger.xml</TemplateURL>
+<TemplateURL>https://raw.githubusercontent.com/blehnen/docker-templates/master/development/jaeger.xml</TemplateURL>
 <Beta>False</Beta>
 <Category>Tracing</Category>
 <Date>2021-04-26</Date>
