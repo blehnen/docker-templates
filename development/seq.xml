@@ -10,7 +10,7 @@
   <Project>https://datalust.co/seq</Project>
   <Overview>Application logging server</Overview>
   <Category>Logging: Status:Stable</Category>
-  <WebUI>http://[IP]:[PORT:16686]/</WebUI>
+  <WebUI>http://[IP]:[PORT:5341]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/blehnen/docker-templates/master/development/seq.xml</TemplateURL>
   <Icon>https://datalust.co/img/seq-logo-dark.svg</Icon>
   <Description>Application logging server</Description>
