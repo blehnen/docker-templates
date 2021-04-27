@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Seq</Name>
+  <Repository>datalust/seq</Repository>
+  <Registry>https://hub.docker.com/r/datalust/seq/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://datalust.co/seq</Support>
+  <Project>https://datalust.co/seq</Project>
+  <Overview>Application logging server</Overview>
+  <Category>Logging: Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:16686]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/blehnen/docker-templates/master/development/seq.xml</TemplateURL>
+  <Icon>https://datalust.co/img/seq-logo-dark.svg</Icon>
+  <Description>Application logging server</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5340</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5341</HostPort>
+        <ContainerPort>5341</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/seq</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Name>ACCEPT_EULA</Name>
+      <Value>Y</Value>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+</Container>
