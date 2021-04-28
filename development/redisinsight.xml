@@ -13,7 +13,7 @@
   <WebUI>http://[IP]:[PORT:8001]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/blehnen/docker-templates/master/development/redisinsight.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/blehnen/docker-templates/master/development/RedisInsight-icon.png</Icon>
-  <Description>Redis Admin GUI/Description>
+  <Description>Redis Admin GUI</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
