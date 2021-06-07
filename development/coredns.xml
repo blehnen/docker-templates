@@ -31,7 +31,7 @@
     </Volume>
   </Data>
   <Environment>
-	<Variable>
+    <Variable>
       <Name>conf</Name>
       <Value>/root/Corefile</Value>
       <Mode/>
