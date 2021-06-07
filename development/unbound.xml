@@ -17,12 +17,12 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>5053</HostPort>
+        <HostPort>53</HostPort>
         <ContainerPort>53</ContainerPort>
         <Protocol>udp</Protocol>
       </Port>
       <Port>
-        <HostPort>5053</HostPort>
+        <HostPort>53</HostPort>
         <ContainerPort>53</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -33,6 +33,6 @@
   <Environment>
   </Environment>
   <Labels/>
-   <Config Name="5053" Target="53" Default="5053" Mode="udp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">5053</Config>
-   <Config Name="5053" Target="53" Default="5053" Mode="tcp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">5053</Config>
+   <Config Name="53" Target="53" Default="53" Mode="udp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">53</Config>
+   <Config Name="53" Target="53" Default="53" Mode="tcp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">53</Config>
 </Container>
