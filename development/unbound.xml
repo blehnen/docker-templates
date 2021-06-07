@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>unbound</Name>
+  <Repository>klutchell/unbound</Repository>
+  <Registry>https://hub.docker.com/r/klutchell/unbound</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/klutchell/unbound</Support>
+  <Project>https://hub.docker.com/r/klutchell/unbound</Project>
+  <Overview>Unbound is a DNS server</Overview>
+  <Category>Network: Status:Stable</Category>
+  <TemplateURL>https://raw.githubusercontent.com/blehnen/docker-templates/master/development/unbound.xml</TemplateURL>
+  <Icon>https://www.nlnetlabs.nl/static/logos/NLnetLabs/Logo_NLnet_Labs_cropped.svg</Icon>
+  <Description>Unbound dns server</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5053</HostPort>
+        <ContainerPort>5053</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+	  <Port>
+        <HostPort>5053</HostPort>
+        <ContainerPort>5053</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+  </Data>
+  <Environment>
+  </Environment>
+  <Labels/>
+   <Config Name="5053" Target="5053" Default="5053" Mode="udp" Description="Container Port: 5053" Type="Port" Display="always" Required="true" Mask="false">5053</Config>
+   <Config Name="5053" Target="5053" Default="5053" Mode="tcp" Description="Container Port: 5053" Type="Port" Display="always" Required="true" Mask="false">5053</Config>
+</Container>
