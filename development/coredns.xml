@@ -24,6 +24,11 @@
     </Publish>
   </Networking>
   <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/coredns</HostDir>
+      <ContainerDir>/root</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <Environment>
 	<Variable>
@@ -32,13 +37,6 @@
       <Mode/>
     </Variable>
   </Environment>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/coredns</HostDir>
-      <ContainerDir>/root</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
   <Labels/>
    <Config Name="53" Target="53" Default="53" Mode="udp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">53</Config>
    <Config Name="conf" Target="conf" Default="/root/Corefile" Mode="" Description="conf" Type="Variable" Display="always" Required="true" Mask="false">/root/Corefile</Config>
