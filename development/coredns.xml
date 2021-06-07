@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>coredns</Name>
-  <Repository>coredns/coredns</Repository>
-  <Registry>https://hub.docker.com/r/coredns/coredns/</Registry>
+  <Repository>ricardbejarano/coredns</Repository>
+  <Registry>https://hub.docker.com/r/ricardbejarano/coredns</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
@@ -26,19 +26,13 @@
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/coredns</HostDir>
-      <ContainerDir>/root</ContainerDir>
+      <ContainerDir>/Corefile</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment>
-    <Variable>
-      <Name>conf</Name>
-      <Value>/root/Corefile</Value>
-      <Mode/>
-    </Variable>
   </Environment>
   <Labels/>
    <Config Name="53" Target="53" Default="53" Mode="udp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">53</Config>
-   <Config Name="conf" Target="conf" Default="/root/Corefile" Mode="" Description="conf" Type="Variable" Display="always" Required="true" Mask="false">/root/Corefile</Config>
    <Config Name="Configuration Path" Target="/root" Default="/mnt/user/appdata/coredns" Mode="rw" Description="Configuration Path" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/coredns</Config>
 </Container>
