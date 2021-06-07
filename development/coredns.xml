@@ -32,13 +32,13 @@
   </Data>
   <Environment>
     <Variable>
-      <Name>-conf</Name>
+      <Name>conf</Name>
       <Value>/root/Corefile</Value>
       <Mode/>
     </Variable>
   </Environment>
   <Labels/>
    <Config Name="53" Target="53" Default="53" Mode="udp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">53</Config>
-   <Config Name="-conf" Target="-conf" Default="/root/Corefile" Mode="" Description="conf" Type="Variable" Display="always" Required="true" Mask="false">/root/Corefile</Config>
+   <Config Name="conf" Target="conf" Default="/root/Corefile" Mode="" Description="conf" Type="Variable" Display="always" Required="true" Mask="false">/root/Corefile</Config>
    <Config Name="Configuration Path" Target="/root" Default="/mnt/user/appdata/coredns" Mode="rw" Description="Configuration Path" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/coredns</Config>
 </Container>
