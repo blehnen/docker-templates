@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>coredns</Name>
+  <Repository>coredns/coredns</Repository>
+  <Registry>https://hub.docker.com/r/coredns/coredns/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/coredns/coredns/</Support>
+  <Project>https://github.com/coredns/coredns/</Project>
+  <Overview>CoreDNS is a DNS server. It is written in Go. </Overview>
+  <Category>Network: Status:Stable</Category>
+  <TemplateURL>https://raw.githubusercontent.com/blehnen/docker-templates/master/development/coredns.xml</TemplateURL>
+  <Icon>https://coredns.io/images/CoreDNS_Colour_Horizontal.png</Icon>
+  <Description>CoreDNS dns server</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>53</HostPort>
+        <ContainerPort>53</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+  </Data>
+  <Environment>
+	<Variable>
+      <Name>conf</Name>
+      <Value>/root/Corefile</Value>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/coredns</HostDir>
+      <ContainerDir>/root</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Labels/>
+   <Config Name="53" Target="53" Default="53" Mode="udp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">53</Config>
+   <Config Name="conf" Target="conf" Default="/root/Corefile" Mode="" Description="conf" Type="Variable" Display="always" Required="true" Mask="false">/root/Corefile</Config>
+</Container>
